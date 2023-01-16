@@ -154,7 +154,7 @@ form.error .error_text {
         width: 75%;
     }
     .body {
-        height: 100vh;
+        min-height: 100vh;
     }
 
     form {
@@ -175,17 +175,20 @@ form.error .error_text {
         width: 100%;
         margin: 0 auto;
     }
+
     h1 {
         font-size: 1.8em;
     }
+
     h5 {
         font-size: 1em;
     }
-
     .social-icons img {
         width: 30px;
     }
+
     .credits {
+        position: fixed;
         bottom: 0;
     }
 }
