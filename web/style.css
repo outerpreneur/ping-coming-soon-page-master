@@ -108,7 +108,7 @@ input {
 }
 
 form input[type="email"] {
-    width: 450px;
+    width: 50%;
     height: 50px;
 }
 
@@ -127,7 +127,7 @@ input[type=submit] {
     background-color: var(--blue);
     color: white;
     border: none;
-    width: 200px;
+    width: 25%;
     height: 3.2em;
     margin-left: 1em;
     font-kerning: none;
@@ -150,20 +150,42 @@ form.error .error_text {
 }
 
 @media only screen and (max-width: 768px) {
+    .container{
+        width: 75%;
+    }
+    .body {
+        height: 100vh;
+    }
+
     form {
         display: flex;
         flex-direction: column;
     }
     form input {
-        width: 90%;
+        width: 100%;
         margin: 10px auto;
         height: 3em;
     }
-    input[type=submit] {
-        width: 90%;
+
+    form input[type=email] {
+        width: 100%;
+    }
+
+    form input[type=submit] {
+        width: 100%;
         margin: 0 auto;
     }
     h1 {
-        font-size: 1.6em;
+        font-size: 1.8em;
+    }
+    h5 {
+        font-size: 1em;
+    }
+
+    .social-icons img {
+        width: 30px;
+    }
+    .credits {
+        bottom: 0;
     }
 }
